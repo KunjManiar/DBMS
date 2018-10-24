@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>WholeSaler-Login</title>
+<link rel="stylesheet" href="static/css/styles.css" type="text/css" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+</head>
+
+<body>
+
+		<section id="body" class="width" style="background-color: #84C639">
+			<aside id="sidebar" class="column-left">
+
+			<!--THE LEFT SIDE MENU IS DUE TO THE ABOVE CODE...!!-->
+			<nav id="mainnav" style="background-color: #84C639">
+   				<ul>
+                            		<li ><a href="/staff_login">Home</a></li>
+									<li><a href="/add_trans">New Transaction</a></li>
+									<!--<li><a href="Defaulters_Table.htm">Defaulters Table</a></li>-->
+                            		<li class="selected-item"><a href="/update_stocks">Updating Stocks</a></li>
+                            		<li><a href="/add_supplier">Add Supplier</a></li>
+									<li><a href="/customers_list"> Customers List</a></li>									<li><a href="/add_product">Add Product</a></li>
+
+                </ul>
+			</nav>
+
+
+
+			</aside>
+
+		<section id="content" class="column-right">
+
+	    <article>
+
+		<blockquote><p><h5 style="margin-bottom: 5px">{{message}}------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p></blockquote>
+		<p>&nbsp;</p>
+
+		<!--	<a href="#" class="button">Read more</a>
+			<a href="#" class="button button-reversed">Comments</a> -->
+		<!--IN THIS FIELD WE CAN ADD THE CUSTOMER..-->
+		<fieldset>
+					<!--YOU NEED TO WRITE AN ACTION HERE...-->
+				<legend><strong>ORDER DETAILS</strong></legend>
+					<form action="/create_order" method="post">
+						<!--id_of_order,quantity, product_id, price-->
+						<p><label for="id_of_order">ID of Order:</label>
+						<input type="number" name="id_of_order" id="id_of_order" value="" required/><br /></p>
+
+						<p><label for="Quantity">Quantity:</label>
+						<input type="number" name="Quantity" id="Quantity" value="" required/><br /></p>
+
+						<p><label for="product_id">Product:</label>
+						<input type="text" name="product_id" id="product_id" value="" required/><br /></p>
+
+						<p><label for="price">Price:</label>
+						<input type="number" name="price" id="price" value="" required/><br /></p>
+
+						<p><input type="submit" name="send" class="formbutton" value="Send"  style="background-color: #84C639"/></p>
+
+					</form>
+
+
+		</fieldset>
+		<br> <br> <br> <br> <br> <br> <br>
+		<fieldset>
+					<!--YOU NEED TO WRITE AN ACTION HERE...-->
+				<legend><strong>UPDATE STOCK</strong></legend>
+					<form action="" method="POST">
+
+						<p><label for="Stock-ID1">Stock-ID:</label>
+						<input type="text" name="Stock-ID1" id="Stock-ID1" value=""  /><br /></p>
+
+						<p><label for="Quantity1">Quantiy:</label>
+						<input type="number" name="Quantity1" id="Quantity1" value="" /><br /></p>
+
+						<p><label for="Price1">Price-Per-Unit:</label>
+						<input type="number" name="Pric1" id="Price1" value="" /><br /></p>
+
+
+						<p><input type="submit" name="send" class="formbutton" value="Send" /></p>
+
+					</form>
+
+
+		</fieldset>
+
+		</article>
+
+		</section>
+
+		<div class="clear"></div>
+
+	</section>
+
+
+</body>
+</html>

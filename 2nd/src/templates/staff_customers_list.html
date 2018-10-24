@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>WholeSaler-Login</title>
+<link rel="stylesheet" href="static/css/styles.css" type="text/css" />
+<link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}"/>
+<link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}"/>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+</head>
+
+<body>
+
+		<section id="body" class="width" style="background-color: #84C639">
+			<aside id="sidebar" class="column-left" >
+
+			<!--THE LEFT SIDE MENU IS DUE TO THE ABOVE CODE...!!-->
+			<nav id="mainnav" style="background-color: #84C639">
+  				<ul>			
+                            		<li ><a href="/staff_login">Home</a></li>
+									<li><a href="/add_trans">New Transaction</a></li>
+									<!--<li><a href="Defaulters_Table.htm">Defaulters Table</a></li>-->
+                            		<li><a href="/update_stocks">Updating Stocks</a></li>
+                            		<li><a href="/add_supplier">Add Supplier</a></li>
+									<li class="selected-item"><a href="/customers_list"> Customers List</a></li>
+									<li><a href="/add_product">Add Product</a></li>
+
+                </ul>
+			</nav>
+
+			
+			
+			</aside>
+			
+		<section id="content" class="column-right">
+                		
+	    <article>
+		
+		<blockquote><p><h5 style="margin-bottom: 5px">{{message}}</h5>------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p></blockquote>
+		<p>&nbsp;</p>
+					
+		<!--	<a href="#" class="button">Read more</a>
+			<a href="#" class="button button-reversed">Comments</a> -->
+		<!--IN THIS FIELD WE CAN ADD THE CUSTOMER..-->
+		<fieldset>
+					<!--YOU NEED TO WRITE AN ACTION HERE...-->
+					<!--NEVER USE KEY WORDS AS THE VARIABLES AND NAMES... -->
+					<legend><strong>CUSTOMER</strong></legend>
+					<!--<form action="/auth_register" method="post">
+						<!--name,gst_no,email,address,mobile,password-->
+			<a href="/auth_register"><button class="btn btn-success" style="margin-bottom: 10px">New Customer</button></a>
+			{%for customer in customers %}
+				<h3><a href="#"> {{customer.name}}</a></h3>
+				<p>{{ customer.mobile }}</p>
+				<hr>
+			{% endfor %}
+			<!--<p><label><strong>Name:</strong></label></p>
+					<!--	<input type="text" name="Username" id="Username"  placeholder = "Name" required/><b/></p>
+
+						<p><label for="Gst"><strong>Gst_No:</strong></label>
+						<input type="text" name="Gst" id="Gst"  placeholder = "Gst" required/><b/></p>
+						
+						<p><label for="Email">Email:</label>
+						<input type="Email" name="Email" id="Email"  required/><br /></p>
+						
+						<p><label for="Mobile">Mobile:</label>
+						<input type="text" name="Mobile" id="Mobile"   required/><br /></p>
+						
+						<p><label for="Password">Password:</label>
+						<input type="text" name="Password" id="Password"  required/><br /></p>
+						
+						<p><label for="Address">Address:</label>	
+						<textarea cols="60" rows="8" name="Address" id="Address" required></textarea><br /></p>
+
+						<p><input type="submit" name="send" class="formbutton" value="Send"  style="background-color: #84C639"/></p>
+					</form>-->
+	
+		</fieldset>
+
+		</article>
+
+		</section>
+
+		<div class="clear"></div>
+
+	</section>
+
+
+</body>
+</html>

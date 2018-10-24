@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>WholeSaler-Login</title>
+<link rel="stylesheet" href="static/css/styles.css" type="text/css" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+</head>
+
+<body>
+
+		<section id="body" class="width" style="background-color: #84C639">
+			<aside id="sidebar" class="column-left">
+
+			<!--THE LEFT SIDE MENU IS DUE TO THE ABOVE CODE...!!-->
+			<nav id="mainnav" style="background-color: #84C639">
+   				<ul>
+                            		<li ><a href="/staff_login">Home</a></li>
+									<li class="selected-item"><a href="/add_trans">New Transaction</a></li>
+									<!--<li><a href="Defaulters_Table.htm">Defaulters Table</a></li>-->
+                            		<li><a href="/update_stocks">Updating Stocks</a></li>
+                            		<li><a href="/add_supplier">Add Supplier</a></li>
+									<li><a href="/customers_list"> Customers List</a></li>
+									<li><a href="/add_product">Add Product</a></li>
+
+
+                </ul>
+			</nav>
+
+
+
+			</aside>
+
+		<section id="content" class="column-right">
+
+	    <article>
+
+		<blockquote><p><h5 style="margin-bottom: 5px">{{message}}</h5>------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p></blockquote>
+		<p>&nbsp;</p>
+
+		<!--	<a href="#" class="button">Read more</a>
+			<a href="#" class="button button-reversed">Comments</a> -->
+		<!--IN THIS FIELD WE CAN ADD THE CUSTOMER..-->
+		<fieldset>
+					<!--YOU NEED TO WRITE AN ACTION HERE...-->
+				<legend><strong>NEW Transaction</strong></legend>
+					<form action="/c_transaction" method="post">
+<!--	id_of_order, mode, total_payment, credited_amount, debited_amount, date_of_debit, date_of_credit-->
+						<p><label for="Oid">Order Id:</label>
+						<input type="text" name="Oid" id="Oid" required/><br /></p>
+
+						<p><label for="Mode">Mode:</label>
+						<input type="text" name="Mode" id="Mode" value="" required/><br /></p>
+
+						<p><br><label for="total_payment">Total Payment:</label>
+						<input type="number" name="total_payment" id="total_payment" value=""  required/><br /></p>
+
+						<p><label for="Credited_amount">Credited Amount:</label>
+						<input type="number" name="Credited_amount" id="Credited_amount" value=""  required/><br /></p>
+
+						<p><label for="Debited_amount">Debited Amount:</label>
+						<input type="number" name="Debited_amount" id="Debited_amount" value=""  required/><br /></p>
+
+						<p><label for="doc">Date of Credit:</label>
+						<input type="date" name="doc" id="doc" value=""  required/><br /></p>
+
+						<p><label for="dod">Date of Debit:</label>
+						<input type="date" name="dod" id="dod" value=""  required/><br /></p>
+
+						<p><input type="submit" name="send" class="formbutton" value="Send"  style="background-color: #84C639"/></p>
+
+					</form>
+
+
+		</fieldset>
+
+		</article>
+
+
+
+		</section>
+
+		<div class="clear"></div>
+
+	</section>
+
+
+</body>
+</html>
