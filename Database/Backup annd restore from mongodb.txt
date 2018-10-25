@@ -1,0 +1,16 @@
+in CMD
+
+Run following commands for BACKUP
+
+Windows
+
+cd c:\
+mkdir mongodb\backup
+mongodump --db <Database_Name> --out mongodb\backup\ {In My case : mongodump --db wholesale --out mongodb\backup\}
+
+Run following commands for RESTORE
+
+cd c:\
+mongorestore --db wholesale --drop <file location>/wholesale
+
+
